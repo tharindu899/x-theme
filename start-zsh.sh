@@ -16,11 +16,10 @@ R () {
 		echo
 		}
 		auto() {
+			R
 			fl
 			mkdir .plugin
 			cd .plugin
-			R
-			fl
 			printf "\n\nPlease wait for cloning…..\n"
 			git clone https://github.com/zsh-users/zsh-autosuggestions > /dev/null 2>&1
 			git clone https://github.com/zsh-users/zsh-syntax-highlighting > /dev/null 2>&1
