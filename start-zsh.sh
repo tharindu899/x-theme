@@ -91,7 +91,8 @@ R () {
 			R
 			printf "\n\n Installing… ..\n\n"
 			R
-			printf "\n cloning powerlevel10k\n"
+			printf "\n cloning powerlevel10k approx. 80MB\n"
+			sleep 1
 			cd ~
 			git clone https://github.com/romkatv/powerlevel10k
 			chp
