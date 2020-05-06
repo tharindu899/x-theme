@@ -15,6 +15,12 @@ R () {
 		figlet ZSH-THEME
 		echo
 		}
+		ex() {
+			cd $PREFIX/bin
+			echo "#!/data/data/com.termux/files/usr/bin/sh" >> ex
+			echo "killall -9 com.termux" >> ex
+			chmod 777 ex
+			}
 		menu3 () {
 			ba
 			cd ~
@@ -24,6 +30,7 @@ R () {
 			rm -f termux.properties > /dev/null 2>&1
 			printf "\n\n Downloading button file\n\n"
 			wget https://raw.githubusercontent.com/rooted-cyber/good/master/zsh/termux.properties
+			ex
 			R
 			printf "\nRestart termux and check\n"
 			else
@@ -32,6 +39,7 @@ R () {
 			rm -f termux.properties > /dev/null 2>&1
 			printf "\n\n Downloading button file\n\n"
 			wget https://raw.githubusercontent.com/rooted-cyber/good/master/zsh/termux.properties
+			ex
 			R
 			printf "\nRestart termux and check\n"
 			fi
