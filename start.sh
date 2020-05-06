@@ -99,6 +99,7 @@ R () {
 			cho
 			auto
 			setuping-theme
+			chsh -s zsh
 			R
 			print "\nRestart termux and check\n"
 			}
