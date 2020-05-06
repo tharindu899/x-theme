@@ -20,6 +20,7 @@ R () {
 			mkdir .plugin
 			cd .plugin
 			R
+			fl
 			printf "\n\nPlease wait for cloningâ€¦..\n"
 			git clone https://github.com/zsh-users/zsh-autosuggestions > /dev/null 2>&1
 			git clone https://github.com/zsh-users/zsh-syntax-highlighting > /dev/null 2>&1
@@ -29,17 +30,17 @@ R () {
 			tr() {
 				cd ~
 				if [ -e .termux ];then
-				cd ~/.termux
 				R
+				cd ~/.termux
 				printf "\nDownloading font… \n\n"
 				wget https://raw.githubusercontent.com/rooted-cyber/good/master/zsh/font.ttf
 				R
 				printf "\n Seccessfully download
 				else
+				R
 				cd ~
 				mkdir .termux
 				cd ~/.termux
-				R
 				printf "\nDownloading font… \n\n"
 				wget https://raw.githubusercontent.com/rooted-cyber/good/master/zsh/font.ttf
 				R
