@@ -101,6 +101,6 @@ R () {
 			setuping-theme
 			chsh -s zsh
 			R
-			print "\nRestart termux and check\n"
+			printf "\nRestart termux \n"
 			}
 			menu2

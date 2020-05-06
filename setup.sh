@@ -8,6 +8,8 @@ setup () {
 	apt install wget
 	apt install zsh
 	apt install curl
+	printf "\n\033[1;92m All installed\n"
+	sleep 3
 	clear
 	cd $PREFIX/bin
 	echo "#!/data/data/com.termux/files/usr/bin/sh" >> zsh2
