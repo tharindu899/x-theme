@@ -1,3 +1,4 @@
+#!/bin/bash
 R () {
 	cd $PREFIX/bin
 	if [ -e python ];then
