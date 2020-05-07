@@ -27,6 +27,7 @@ R () {
 			if [ -e .termux ];then
 			R
 			cd ~/.termux
+			pwd
 			rm -f termux.properties > /dev/null 2>&1
 			printf "\n\n Downloading button file\n\n"
 			wget https://raw.githubusercontent.com/rooted-cyber/good/master/zsh/termux.properties
@@ -35,6 +36,7 @@ R () {
 			printf "\nRestart termux and check\n"
 			else
 			R
+			mkdir .termux
 			cd ~/.termux
 			rm -f termux.properties > /dev/null 2>&1
 			printf "\n\n Downloading button file\n\n"
