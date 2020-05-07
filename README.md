@@ -21,4 +21,4 @@
 Video tutorial
 </pre>
 
-<iframe width="400" height="400" src="https://youtu.be/2krTPrMHG80">
+<pre>Video link :- https://youtu.be/2krTPrMHG80</pre>
