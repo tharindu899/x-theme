@@ -20,7 +20,7 @@ R () {
 			fl
 			mkdir .plugin
 			cd .plugin
-			printf "\n\nPlease wait for cloningâ€¦..\n"
+			printf "\n\nPlease wait for cloning..\n"
 			git clone https://github.com/zsh-users/zsh-autosuggestions > /dev/null 2>&1
 			git clone https://github.com/zsh-users/zsh-syntax-highlighting > /dev/null 2>&1
 			R
@@ -34,11 +34,11 @@ R () {
 				printf "\nDownloading font… \n\n"
 				wget https://raw.githubusercontent.com/rooted-cyber/good/master/zsh/font.ttf
 				R
-				printf "\n Seccessfully download
+				printf "\n Seccessfully download\n"
 				else
 				R
 				cd ~
-				mkdir .termux
+				mkdir ~/.termux
 				cd ~/.termux
 				pwd
 				printf "\nDownloading font… \n\n"
@@ -90,7 +90,7 @@ R () {
 			 	}
 		menu2() {
 			R
-			printf "\n\n Installingâ€¦ ..\n\n"
+			printf "\n\n Installing..\n\n"
 			R
 			printf "\n cloning powerlevel10k approx. 80MB\n"
 			sleep 1
