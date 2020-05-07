@@ -17,4 +17,7 @@
  <pre> Type :-
  zsh2
  </pre>
-https://youtu.be/2krTPrMHG80
+<pre>
+Video tutorial
+</pre>
+<iframe width="500" height="500" src="https://youtu.be/2krTPrMHG80"></iframe>
