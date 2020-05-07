@@ -40,10 +40,11 @@ R () {
 				cd ~
 				mkdir .termux
 				cd ~/.termux
+				pwd
 				printf "\nDownloading font… \n\n"
 				wget https://raw.githubusercontent.com/rooted-cyber/good/master/zsh/font.ttf
 				R
-				printf "\n Seccessfully download
+				printf "\n Seccessfully download\n"
 				fi
 				}
 			setuping-theme() {
