@@ -18,6 +18,7 @@ R () {
 		auto() {
 			R
 			fl
+			cd ~/../usr/etc
 			mkdir .plugin
 			cd .plugin
 			printf "\n\nPlease wait for cloning..\n"
