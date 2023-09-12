@@ -1,14 +1,16 @@
 <img src="https://github.com/rooted-cyber/image-upload/raw/master/zsh1.png" style="width:300px;height:400px;">
 <img src="https://github.com/rooted-cyber/image-upload/raw/master/zsh2.png" style="width:300px;height:400px;">
 
-<pre>
- apt update
- apt upgrade
- apt install git
+
+'''
+ apt update -y
+ apt upgrade -y
+ apt install git -y
  cd $HOME
  git clone https://github.com/tharindu899/zsh-theme
  cd zsh-theme
- bash zsh.sh </pre>
+ bash zsh.sh 
+ '''
 
  
  
