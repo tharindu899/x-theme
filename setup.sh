@@ -10,6 +10,7 @@ setup () {
 	apt install curl -y
 	apt install lsd -y
 	apt install micro -y
+	termux-setup-storage
 	curl -sL https://raw.githubusercontent.com/bajrangCoder/acode-plugin-acodex/main/installServer.sh | bash
 	printf "\n\033[1;92m All installed\n"
 	sleep 3
