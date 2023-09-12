@@ -15,7 +15,7 @@ R () {
 		figlet ZSH-THEME
 		echo
 		}
-		ex() {
+		e() {
 			cd $PREFIX/bin
 			echo "#!/data/data/com.termux/files/usr/bin/sh" >> e
 			echo "killall -9 com.termux" >> e

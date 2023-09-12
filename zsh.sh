@@ -29,13 +29,18 @@ R () {
 					fl
 					bash setup.sh
 					}
+					add () {
+						fl
+						bash add.sh
+					}
 		menu () {
 			clear
 			ba
 			printf "\033[1;92m[\033[0m1\033[1;92m]\033[1;93m Zsh Theme install\n"
 			#printf "\033[1;92m[\033[0m2\033[1;92m]\033[1;93m Some changes in zsh theme\n"
 			printf "\033[1;92m[\033[0m2\033[1;92m]\033[1;93m Termux Extra button\n"
-			printf "\033[1;92m[\033[0m3\033[1;92m]\033[1;93m Exit\n\n\n"
+			printf "\033[1;92m[\033[0m3\033[1;92m]\033[1;93m add to alias\n"
+			printf "\033[1;92m[\033[0m4\033[1;92m]\033[1;93m Exit\n\n\n"
 			printf "\033[1;96m%sZsh@theme >> "
 			read a
 			case $a in
