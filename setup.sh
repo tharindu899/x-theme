@@ -18,7 +18,7 @@ setup () {
 	echo "bash ~/zsh-theme/zsh.sh" >> zsh2
 	chmod 777 zsh2
 	echo "#!/data/data/com.termux/files/usr/bin/sh" >> add
-	echo "bash ~/add.sh" >> add
+	echo "bash ~/.termux/add.sh" >> add
 	chmod 777 add
 	printf "\n\n\033[1;92m Now you can use :- zsh2"
 	printf "\n\n\033[1;92m use to create alias :- add\n"

@@ -31,8 +31,9 @@ R () {
 				if [ -e .termux ];then
 				R
 				cd ~/.termux
-				printf "\nDownloading font� \n\n"
+				printf "\nDownloading font� & add.sh \n\n"
 				wget https://raw.githubusercontent.com/rooted-cyber/good/master/zsh/font.ttf
+				wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/add.sh
 				R
 				printf "\n Seccessfully download\n"
 				else
@@ -41,8 +42,9 @@ R () {
 				mkdir ~/.termux
 				cd ~/.termux
 				pwd
-				printf "\nDownloading font� \n\n"
+				printf "\nDownloading font� & add.sh \n\n"
 				wget https://raw.githubusercontent.com/rooted-cyber/good/master/zsh/font.ttf
+				wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/add.sh
 				R
 				printf "\n Seccessfully download\n"
 				fi
@@ -51,8 +53,8 @@ R () {
 				R
 				printf "\n\nSetuping theme please wait..\n\n"
 				cd ~
-				wget https://raw.githubusercontent.com/rooted-cyber/good/master/zsh/.zshrc > /dev/null 2>&1
-				wget https://raw.githubusercontent.com/rooted-cyber/good/master/zsh/.p10k.zsh > /dev/null 2>&1
+				wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/.zshrc > /dev/null 2>&1
+				wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/.p10k.zsh > /dev/null 2>&1
 				tr
 				}
 				chp() {
