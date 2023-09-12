@@ -31,7 +31,7 @@ R () {
 				if [ -e .termux ];then
 				R
 				cd ~/.termux
-				printf "\nDownloading font� & add.sh \n\n"
+				printf "\nDownloading font🖊️ & add.sh \n\n"
 				wget https://raw.githubusercontent.com/rooted-cyber/good/master/zsh/font.ttf
 				wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/add.sh
 				R
@@ -42,7 +42,7 @@ R () {
 				mkdir ~/.termux
 				cd ~/.termux
 				pwd
-				printf "\nDownloading font� & add.sh \n\n"
+				printf "\nDownloading font🖊️ & add.sh \n\n"
 				wget https://raw.githubusercontent.com/rooted-cyber/good/master/zsh/font.ttf
 				wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/add.sh
 				R
