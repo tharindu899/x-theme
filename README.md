@@ -5,7 +5,7 @@
 
 ## instalation command
 
-```
+```code
 apt update -y
 apt upgrade -y
 apt install git -y
