@@ -21,7 +21,7 @@ R () {
 			echo "bash ~/zsh-theme/add.sh" >> add
 			chmod 777 add
 			}
-		menu3 () {
+		menu2 () {
 			ba
 			cd ~
 			if [ -e .termux ];then
@@ -46,4 +46,4 @@ R () {
 			printf "\nRestart termux and check\n"
 			fi
 			}
-			menu3
+			menu2
