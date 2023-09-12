@@ -31,7 +31,7 @@ R () {
 				if [ -e .termux ];then
 				R
 				cd ~/.termux
-				printf "\nDownloading font… \n\n"
+				printf "\nDownloading fontï¿½ \n\n"
 				wget https://raw.githubusercontent.com/rooted-cyber/good/master/zsh/font.ttf
 				R
 				printf "\n Seccessfully download\n"
@@ -41,7 +41,7 @@ R () {
 				mkdir ~/.termux
 				cd ~/.termux
 				pwd
-				printf "\nDownloading font… \n\n"
+				printf "\nDownloading fontï¿½ \n\n"
 				wget https://raw.githubusercontent.com/rooted-cyber/good/master/zsh/font.ttf
 				R
 				printf "\n Seccessfully download\n"

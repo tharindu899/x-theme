@@ -17,9 +17,9 @@ R () {
 		}
 		ex() {
 			cd $PREFIX/bin
-			echo "#!/data/data/com.termux/files/usr/bin/sh" >> ex
-			echo "killall -9 com.termux" >> ex
-			chmod 777 ex
+			echo "#!/data/data/com.termux/files/usr/bin/sh" >> e
+			echo "killall -9 com.termux" >> e
+			chmod 777 e
 			}
 		menu3 () {
 			ba
@@ -30,8 +30,8 @@ R () {
 			pwd
 			rm -f termux.properties > /dev/null 2>&1
 			printf "\n\n Downloading button file\n\n"
-			wget https://raw.githubusercontent.com/rooted-cyber/good/master/zsh/termux.properties
-			ex
+			wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/termux.properties
+			e
 			R
 			printf "\nRestart termux and check\n"
 			else
@@ -40,8 +40,8 @@ R () {
 			cd ~/.termux
 			rm -f ~/.termux/termux.properties > /dev/null 2>&1
 			printf "\n\n Downloading button file\n\n"
-			wget https://raw.githubusercontent.com/rooted-cyber/good/master/zsh/termux.properties
-			ex
+			wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/termux.properties
+			e
 			R
 			printf "\nRestart termux and check\n"
 			fi
