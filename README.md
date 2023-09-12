@@ -2,16 +2,17 @@
 <img src="https://github.com/rooted-cyber/image-upload/raw/master/zsh2.png" style="width:300px;height:400px;">
 
 
-'''
- apt update -y
+
+``` 
+apt update -y
  apt upgrade -y
  apt install git -y
  cd $HOME
  git clone https://github.com/tharindu899/zsh-theme
  cd zsh-theme
- bash zsh.sh 
- '''
-
+ bash zsh.sh
+```
+ 
  
  
  # starting
