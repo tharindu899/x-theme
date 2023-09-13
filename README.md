@@ -27,7 +27,7 @@ link :- [Video link](https://youtu.be/2krTPrMHG80)
  
 <div style="display: flex; justify-content: space-between;">
   <img src="https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/img/zsh.jpg" width="150">
-  <img src="https://github.com/rooted-cyber/image-upload/raw/master/zsh2.png" width="180">
+  <img src="https://github.com/rooted-cyber/image-upload/raw/master/zsh2.png" width="185">
 </div>
 
 __________________________________________
