@@ -44,6 +44,6 @@ setup () {
 	echo "bash ~/add.sh" >> add
 	chmod 777 add
 	printf "\n\n\033[1;92m Now you can use\033[0m :- zsh2"
-	printf "\n\n\033[1;92m Now you can use to create alias\033[0m:- add\n"
+	printf "\033[1;92m Now you can use to create alias\033[0m:- add\n"
 	}
 	setup
