@@ -25,7 +25,10 @@ link :- [Video link](https://youtu.be/2krTPrMHG80)
  
  ## example 
  
-<img src="https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/img/zsh.jpg" width="157"> <img src="https://github.com/rooted-cyber/image-upload/raw/master/zsh2.png" width="195">
+<div style="display: flex; justify-content: space-between;">
+  <img src="https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/img/zsh.jpg" width="200">
+  <img src="https://github.com/rooted-cyber/image-upload/raw/master/zsh2.png" width="200">
+</div>
 
 __________________________________________
 
