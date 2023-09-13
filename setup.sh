@@ -11,7 +11,7 @@ setup () {
 	apt install lsd -y
 	apt install micro -y
 	pkg install zip -y
-	#curl -sL https://raw.githubusercontent.com/bajrangCoder/acode-plugin-acodex/main/installServer.sh | bash
+	curl -sL https://raw.githubusercontent.com/bajrangCoder/acode-plugin-acodex/main/installServer.sh | bash
 	printf "\n\033[1;92m All installed\n"
 	sleep 3
 	clear
