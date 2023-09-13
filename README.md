@@ -14,9 +14,11 @@ bash zsh.sh
 
 ## starting
 
-- Type :-
+- Type :
 
- ```zsh2```
+ ```bash
+ zsh2
+ ```
  
  ## Video tutorial
 
