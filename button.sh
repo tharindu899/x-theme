@@ -45,21 +45,21 @@ menu3 () {
     cd ~/.termux
     pwd
     rm -f termux.properties > /dev/null 2>&1
-    printf "\n\n${YELLOW}Downloading button file${RESET}\n\n"
+    printf "\n\n ☢ ${YELLOW}Downloading button file${RESET}\n\n"
     wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/termux.properties
     ex
     R
-    printf "\n${GREEN}Restart Termux and check${RESET}\n"
+    printf "\n\n ☢ ${GREEN}Restart Termux and check${RESET}\n"
   else
     R
     mkdir ~/.termux
     cd ~/.termux
     rm -f ~/.termux/termux.properties > /dev/null 2>&1
-    printf "\n\n${YELLOW}Downloading button file${RESET}\n\n"
+    printf "\n\n ☢ ${YELLOW}Downloading button file${RESET}\n\n"
     wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/termux.properties
     ex
     R
-    printf "\n${GREEN}Restart Termux and check${RESET}\n"
+    printf "\n\n ☢ ${GREEN}Restart Termux and check${RESET}\n"
   fi
 }
 
