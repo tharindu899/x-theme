@@ -50,9 +50,11 @@ setup () {
   sleep 3
   clear
   cd $PREFIX/bin
+  rm -rf zsh2
   echo "#!/data/data/com.termux/files/usr/bin/sh" >> zsh2
   echo "bash ~/zsh-theme/zsh.sh" >> zsh2
   chmod 777 zsh2
+  rm -rf add
   echo "#!/data/data/com.termux/files/usr/bin/sh" >> add
   echo "bash ~/add.sh" >> add
   chmod 777 add
