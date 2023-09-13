@@ -29,17 +29,17 @@ R () {
 			cd ~/.termux
 			pwd
 			rm -f termux.properties > /dev/null 2>&1
-			printf "\n\n Downloading button file\n\n"
+			printf "\n\n\033[1;92m Downloading button file \033[0m\n\n"
 			wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/termux.properties
 			e
 			R
-			printf "\nRestart termux and check\n"
+			printf "\n\033[1;92m Restart termux and check \033[0m\n\n"
 			else
 			R
 			mkdir ~/.termux
 			cd ~/.termux
 			rm -f ~/.termux/termux.properties > /dev/null 2>&1
-			printf "\n\n Downloading button file\n\n"
+			printf "\n\033[1;92m Downloading button \033[0m\n\n"
 			wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/termux.properties
 			e
 			R
