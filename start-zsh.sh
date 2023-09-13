@@ -51,9 +51,9 @@ tr() {
   if [ -e .termux ]; then
     R
     cd ~/.termux
-    printf "\n${MAGENTA}Downloading font🖊️ \n\n"
+    printf "\n${MAGENTA}Downloading font🖊️${NC} \n\n"
     wget https://raw.githubusercontent.com/rooted-cyber/good/master/zsh/font.ttf
-    printf "\n${ORANGE}Downloading create alias file add.sh \n\n"
+    printf "\n${ORANGE}Downloading create alias file add.sh${NC} \n\n"
     wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/add.sh
     R
     printf "\n${GREEN}Successfully downloaded${NC}\n"
@@ -63,9 +63,9 @@ tr() {
     mkdir ~/.termux
     cd ~/.termux
     pwd
-    printf "\n${MAGENTA}Downloading font🖊️ \n\n"
+    printf "\n${MAGENTA}Downloading font🖊${NC}️ \n\n"
     wget https://raw.githubusercontent.com/rooted-cyber/good/master/zsh/font.ttf
-    printf "\n${ORANGE}Downloading create alias file add.sh \n\n"
+    printf "\n${ORANGE}Downloading create alias file add.sh${NC} \n\n"
     wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/add.sh
     R
     printf "\n${GREEN}Successfully downloaded${NC}\n"
