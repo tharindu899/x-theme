@@ -1,6 +1,6 @@
-# Read and fllow steps
+# 🚨🚨 Read and fllow steps 🚨🚨
 
-## instalation command
+## instalation command 👇
 
 ```code
 apt update -y
@@ -14,18 +14,18 @@ bash zsh.sh
 
 ## starting
 
-- Type :
+- Type : 👇
 
  ```bash
  zsh2
  ```
  
- ## Video tutorial
+ ## Video tutorial 👇
 
 link :- [Video link](https://youtu.be/2krTPrMHG80)
 
  
- ## example 
+ ## example 👇
  
 <div style="display: flex; justify-content: space-between;">
   <img src="https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/img/zsh.jpg" width="155">
