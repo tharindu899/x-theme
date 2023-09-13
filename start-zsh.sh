@@ -26,7 +26,6 @@ R () {
 			git clone https://github.com/zsh-users/zsh-syntax-highlighting > /dev/null 2>&1
 			R
 			printf "\nCloning successfull\n\n"
-			clear
 			}
 			tr() {
 				cd ~
@@ -39,7 +38,6 @@ R () {
 				wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/add.sh
 				R
 				printf "\n Seccessfully download\n"
-				clear
 				else
 				R
 				cd ~
@@ -52,7 +50,6 @@ R () {
 				wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/add.sh
 				R
 				printf "\n Seccessfully download\n"
-				clear
 				fi
 				}
 			setuping-theme() {
