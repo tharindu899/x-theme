@@ -39,11 +39,11 @@ auto() {
   cd ~/../usr/etc
   mkdir .plugin
   cd .plugin
-  printf "\n\n ☢ ${MAGENTA}Please wait for cloning...${NC}\n"
+  printf "\n\n   💠${MAGENTA}Please wait for cloning...${NC}\n"
   git clone https://github.com/zsh-users/zsh-autosuggestions > /dev/null 2>&1
   git clone https://github.com/zsh-users/zsh-syntax-highlighting > /dev/null 2>&1
   R
-  printf "\n\n ☢ ${CYAN}Cloning successful${NC}\n\n"
+  printf "\n\n   💠${CYAN}Cloning successful${NC}\n\n"
 }
 
 tr() {
@@ -51,30 +51,30 @@ tr() {
   if [ -e .termux ]; then
     R
     cd ~/.termux
-    printf "\n\n ☢ ${MAGENTA}Downloading font🖊️${NC} \n\n"
+    printf "\n\n   💠${MAGENTA}Downloading font🖊️${NC} \n\n"
     wget https://raw.githubusercontent.com/rooted-cyber/good/master/zsh/font.ttf
-    printf "\n\n ☢ ${ORANGE}Downloading create alias file add.sh${NC} \n\n"
+    printf "\n\n   💠${ORANGE}Downloading create alias file add.sh${NC} \n\n"
     wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/add.sh
     R
-    printf "\n\n ☢ ${GREEN}Successfully downloaded${NC}\n"
+    printf "\n\n   💠${GREEN}Successfully downloaded${NC}\n"
   else
     R
     cd ~
     mkdir ~/.termux
     cd ~/.termux
     pwd
-    printf "\n\n ☢ ${MAGENTA}Downloading font🖊${NC}️ \n\n"
+    printf "\n\n   💠${MAGENTA}Downloading font🖊${NC}️ \n\n"
     wget https://raw.githubusercontent.com/rooted-cyber/good/master/zsh/font.ttf
-    printf "\n\n ☢ ${ORANGE}Downloading create alias file add.sh${NC} \n\n"
+    printf "\n\n   💠${ORANGE}Downloading create alias file add.sh${NC} \n\n"
     wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/add.sh
     R
-    printf "\n\n ☢ ${GREEN}Successfully downloaded${NC}\n"
+    printf "\n\n   💠${GREEN}Successfully downloaded${NC}\n"
   fi
 }
 
 setuping-theme() {
   R
-  printf "\n\n ☢ ${ORANGE}Setting up theme, please wait...${NC}\n\n"
+  printf "\n\n   💠${ORANGE}Setting up theme, please wait...${NC}\n\n"
   cd ~
   wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/.zshrc > /dev/null 2>&1
   wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/.p10k.zsh > /dev/null 2>&1
@@ -87,7 +87,7 @@ chp() {
     R
     printf "${GREEN}Successfully cloning powerlevel10k${NC}\n\n"
   else
-    printf "\n\n ☢ ${RED}Sorry, powerlevel10k is not installed!${NC}\n\n"
+    printf "\n\n   💠${RED}Sorry, powerlevel10k is not installed!${NC}\n\n"
     exit
   fi
 }
@@ -96,9 +96,9 @@ cho() {
   cd ~
   if [ -e .oh-my-zsh ]; then
     R
-    printf "\n\n ☢ ${GREEN}Cloning successful${NC}\n\n"
+    printf "\n\n   💠${GREEN}Cloning successful${NC}\n\n"
   else
-    printf "\n\n ☢ ${RED}Cloning failed, please try again!${NC}\n\n"
+    printf "\n\n   💠${RED}Cloning failed, please try again!${NC}\n\n"
     exit
   fi
 }
@@ -107,10 +107,10 @@ ohmyzsh () {
   cd ~
   if [ -e .oh-my-zsh ]; then
     R
-    printf "\n\n ☢ ${GREEN}Already installed oh-my-zsh${NC}\n\n"
+    printf "\n\n   💠${GREEN}Already installed oh-my-zsh${NC}\n\n"
   else
     R
-    printf "\n\n ☢ ${PINK}Cloning oh-my-zsh${NC}\n"
+    printf "\n\n   💠${PINK}Cloning oh-my-zsh${NC}\n"
     cd ~
     git clone https://github.com/ohmyzsh/ohmyzsh
     mv ohmyzsh .oh-my-zsh
@@ -119,7 +119,7 @@ ohmyzsh () {
 
 menu2() {
   R
-  printf "\n\n ☢ ${PINK}Installing...${NC}\n\n"
+  printf "\n\n   💠${PINK}Installing...${NC}\n\n"
   R
   printf "${PINK}Cloning powerlevel10k approx. 80MB${NC}\n"
   sleep 1
@@ -132,7 +132,7 @@ menu2() {
   setuping-theme
   chsh -s zsh
   R
-  printf "\n\n ☢ ${GREEN}Restart Termux${NC}\n"
+  printf "\n\n   💠${GREEN}Restart Termux${NC}\n"
 }
 
 menu2
