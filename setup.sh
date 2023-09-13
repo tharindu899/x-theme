@@ -44,6 +44,9 @@ setup () {
   printf "\n\n${RED}  ☢ ${RESET} ${YELLOW}zip/unzip${RESET}\n\n"
   pkg install zip -y
   clear
+  printf "\n\n${RED}  ☢ ${RESET} ${YELLOW}Logo-ls${RESET}\n\n"
+  pkg install logo-ls -y
+  clear
   printf "\n\n${RED}  ☢ ${RESET} ${MAGENTA}AcodeX${RESET}\n\n"
   curl -sL https://raw.githubusercontent.com/bajrangCoder/acode-plugin-acodex/main/installServer.sh | bash
   printf "\n\n${RED}  ☢ ${RESET} ${GREEN}All installed${RESET}\n\n"
