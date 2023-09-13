@@ -1,4 +1,4 @@
-# 🚨🚨 Read and fllow steps 🚨🚨
+# 🚨🚨 fllow steps 🚨🚨
 
 ## instalation command 👇
 
