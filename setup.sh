@@ -29,7 +29,7 @@ setup () {
   printf "\n\n   💠 ${CYAN}wget${RESET}\n\n"
   apt install wget -y
   clear
-  printf "\n\n   💠 ${WHITE}zsh${RESET}\n\n"
+  printf "\n\n   💠 ${BLUE}zsh${RESET}\n\n"
   apt install zsh -y
   clear
   printf "\n\n   💠 ${GREEN}curl${RESET}\n\n"
