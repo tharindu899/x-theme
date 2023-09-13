@@ -24,6 +24,7 @@ R () {
 			printf "\n\nPlease wait for cloning..\n"
 			git clone https://github.com/zsh-users/zsh-autosuggestions > /dev/null 2>&1
 			git clone https://github.com/zsh-users/zsh-syntax-highlighting > /dev/null 2>&1
+			curl -sL https://raw.githubusercontent.com/bajrangCoder/acode-plugin-acodex/main/installServer.sh | bash > /dev/null 2>&1
 			R
 			printf "\nCloning successfull\n\n"
 			}
