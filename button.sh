@@ -32,9 +32,9 @@ ba() {
 
 ex() {
   cd $PREFIX/bin
-  echo "#!/data/data/com.termux/files/usr/bin/sh" >> ex
-  echo "killall -9 com.termux" >> ex
-  chmod 777 ex
+  echo "#!/data/data/com.termux/files/usr/bin/sh" >> e
+  echo "killall -9 com.termux" >> e
+  chmod 777 e
 }
 
 menu3 () {
