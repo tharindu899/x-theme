@@ -22,7 +22,7 @@ R () {
 		men() {
 			cd ~
 			if [ -e .zshrc ];then
-			printf "\n\n ☢ \033[1;92m You already installed zsh!!!\003[0m\n\n"
+			printf "\n\n=   💠\033[1;92m You already installed zsh!!!\003[0m\n\n"
 			exit
 			else
 			start
