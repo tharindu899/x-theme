@@ -26,28 +26,33 @@ R () {
 			git clone https://github.com/zsh-users/zsh-syntax-highlighting > /dev/null 2>&1
 			R
 			printf "\nCloning successfull\n\n"
+			clear
 			}
 			tr() {
 				cd ~
 				if [ -e .termux ];then
 				R
 				cd ~/.termux
-				printf "\nDownloading font🖊️ & add.sh \n\n"
+				printf "\nDownloading font🖊️ \n\n"
 				wget https://raw.githubusercontent.com/rooted-cyber/good/master/zsh/font.ttf
+				printf "\nDownloading create alias file add.sh \n\n"
 				wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/add.sh
 				R
 				printf "\n Seccessfully download\n"
+				clear
 				else
 				R
 				cd ~
 				mkdir ~/.termux
 				cd ~/.termux
 				pwd
-				printf "\nDownloading font🖊️ & add.sh \n\n"
+				printf "\nDownloading font🖊️ \n\n"
 				wget https://raw.githubusercontent.com/rooted-cyber/good/master/zsh/font.ttf
+				printf "\nDownloading create alias file add.sh \n\n"
 				wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/add.sh
 				R
 				printf "\n Seccessfully download\n"
+				clear
 				fi
 				}
 			setuping-theme() {
