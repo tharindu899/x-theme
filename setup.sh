@@ -11,8 +11,8 @@ WHITE='\033[1;37m'
 RESET='\033[0m' # No Color
 
 setup () {
-  printf "\n${GREEN}Installing Requirements..${RESET}\n\n"
-  printf "\n${YELLOW}apt update${RESET}\n\n"
+  printf "\n\n ☢ ${GREEN}Installing Requirements..${RESET}\n\n"
+  printf "\n\n ☢ ${YELLOW}apt update${RESET}\n\n"
   apt update
   printf "\n\n ☢ ${YELLOW}apt upgrade${RESET}\n\n"
   apt upgrade -y
