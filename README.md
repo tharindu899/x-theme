@@ -26,7 +26,7 @@ link :- [Video link](https://youtu.be/2krTPrMHG80)
  ## example 
  
 <img src="https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/img/zsh.jpg" width="176">
-<img src="https://github.com/rooted-cyber/image-upload/raw/master/zsh2.png" width="215">
+<img src="https://github.com/rooted-cyber/image-upload/raw/master/zsh2.png" width="190">
 
 __________________________________________
 
