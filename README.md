@@ -1,8 +1,5 @@
 # Read and fllow steps
 
-![Image 1](https://github.com/rooted-cyber/image-upload/raw/master/zsh1.png){width=400}
-![Image 2](https://github.com/rooted-cyber/image-upload/raw/master/zsh2.png){width=400}
-
 ## instalation command
 
 ```code
@@ -20,7 +17,15 @@ bash zsh.sh
 - Type :-
 
  ```zsh2```
+ 
+ ## Video tutorial
 
-## Video tutorial
+link :- [Video link](https://youtu.be/2krTPrMHG80)
 
-[Video link](https://youtu.be/2krTPrMHG80)
+ 
+ ## example 
+ 
+<img src="https://github.com/rooted-cyber/image-upload/raw/master/zsh1.png" width="196">
+<img src="https://github.com/rooted-cyber/image-upload/raw/master/zsh2.png" width="196">
+
+# Thanks 🙏 [rooted-cyber](https://github.com/rooted-cyber)
