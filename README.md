@@ -1,6 +1,6 @@
 # Read and fllow steps
 
-![Image 1](https://github.com/rooted-cyber/image-upload/raw/master/zsh1.png){width=400}
+![Image 1]((https://github.com/rooted-cyber/image-upload/raw/master/zsh1.png){width=400})
 ![Image 2](https://github.com/rooted-cyber/image-upload/raw/master/zsh2.png){width=400}
 
 ## instalation command
