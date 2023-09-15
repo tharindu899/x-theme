@@ -49,7 +49,7 @@ banner() {
     printf "\n   💠 ${YELLOW}Downloading banner${NC}\n\n"
     cd $PREFIX/etc
     mv motd motd1
-    cd ~/.termux
+    cd $PREFIX/etc
     wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/banner.txt
     printf "\n   💠 ${GREEN}Successfully added banner${NC}\n"
   else
