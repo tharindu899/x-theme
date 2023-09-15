@@ -31,7 +31,6 @@ setup () {
     printf "\n\n   $color_code$name \033[0m\n\n"
        
     case $i in
-        ;;
       0)
         apt update -y
         ;;
