@@ -45,15 +45,24 @@ auto() {
 
 banner() {
   cd $PREFIX/etc
+  rm -rf zshrc
   if [ ! -e banner.txt ]; then
-    printf "\n   💠 ${YELLOW}Downloading banner${NC}\n\n"
+    printf "\n   💠 ${YELLOW}Downloading banner.txt${NC}\n\n"
     cd $PREFIX/etc
     mv motd motd1
-    cd $PREFIX/etc
-    wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/banner.txt
+    cd ~/.termux
+    wget https://github.com/tharindu899/addon/blob/main/termux/zsh/banner.txt
     printf "\n   💠 ${GREEN}Successfully added banner${NC}\n"
   else
     printf "\n   💠 ${RED}already exists banner${NC}\n"
+  fi
+  
+  if [ ! -e zshrc ]; then
+    printf "\n   💠 ${YELLOW}Downloading banner zshrc${NC}\n\n"
+    wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/zshrc
+    printf "   💠 ${GREEN}Successfully added zshrc${NC}\n\n"
+  else
+    printf "\n   💠 ${RED}already exists zshrc${NC}\n"
   fi
 }
 
