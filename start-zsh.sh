@@ -98,6 +98,7 @@ p10k () {
 else
   R
   printf "\n   💠 ${YELLOW}Cloning powerlevel10k${NC}\n"
+  cd ~
   git clone https://github.com/romkatv/powerlevel10k
   printf "\n   💠 ${GREEN}Cloning successful powerlevel10k ${NC}\n"
   fi
