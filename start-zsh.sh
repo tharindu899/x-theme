@@ -29,28 +29,28 @@ ba() {
 auto() {
   cd ~/../usr/etc
   if [ -e .plugin ]; then 
-    R
+    #R
     printf "\n   💠 ${RED}Already exists autosuggestions/syntax-highlighting${NC}\n"
   else
     printf "\n   💠 ${YELLOW}Please wait for cloning...${NC}\n"
     cd ~/../usr/etc
     mkdir .plugin
     cd .plugin
-    git clone https://github.com/zsh-users/zsh-autosuggestions > /dev/null 2>&1
-    git clone https://github.com/zsh-users/zsh-syntax-highlighting > /dev/null 2>&1
-    R
+    git clone https://github.com/zsh-users/zsh-autosuggestions #> /dev/null 2>&1
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting #> /dev/null 2>&1
+    #R
     printf "\n   💠 ${GREEN}Cloning successful${NC}\n"
   fi
 }
 
 theme() {
-  R
+  #R
   printf "\n   💠 ${YELLOW}Downloading .zshrc .p10k${NC}\n\n"
   cd ~
   rm -rf .zshrc
   rm -rf .p10k.zsh
-  wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/.zshrc > /dev/null 2>&1
-  wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/.p10k.zsh > /dev/null 2>&1
+  wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/.zshrc #> /dev/null 2>&1
+  wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/.p10k.zsh #> /dev/null 2>&1
   tr
 }
 
@@ -64,7 +64,7 @@ tr() {
     else
       printf "\n   💠 ${RED}already exists font.ttf${NC}\n"
     fi
-    R
+    #R
     # Check if add.sh already exists
     if [ ! -e add.sh ]; then
       wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/add.sh
@@ -78,10 +78,10 @@ tr() {
 ohmyzsh () {
   cd ~
   if [ -e .oh-my-zsh ]; then
-    R
+    #R
     printf "\n   💠 ${RED}Already installed oh-my-zsh${NC}\n"
   else
-    R
+    #R
     printf "\n   💠 ${YELLOW}Cloning oh-my-zsh${NC}\n"
     cd ~
     git clone https://github.com/ohmyzsh/ohmyzsh
@@ -93,10 +93,10 @@ ohmyzsh () {
 p10k () {
   cd ~
   if [ -e powerlevel10k ]; then
-  R 
+  #R 
   printf "\n   💠 ${RED}Already installed powerlevel10k${NC}\n"
 else
-  R
+  #R
   printf "\n   💠 ${YELLOW}Cloning powerlevel10k${NC}\n"
   cd ~
   git clone https://github.com/romkatv/powerlevel10k
