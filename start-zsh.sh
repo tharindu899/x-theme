@@ -32,7 +32,7 @@ auto() {
     #R
     printf "\n   💠 ${RED}Already exists autosuggestions/syntax-highlighting${NC}\n"
   else
-    printf "\n   💠 ${YELLOW}Please wait for cloning...${NC}\n"
+    printf "\n   💠 ${YELLOW}cloning autosuggestions/syntax-highlighting${NC}\n\n"
     cd ~/../usr/etc
     mkdir .plugin
     cd .plugin
@@ -58,7 +58,7 @@ tr() {
   cd ~/.termux
     # Check if font.ttf already exists
     if [ ! -e font.ttf ]; then
-      printf "\n   💠 ${YELLOW}Downloading font${NC}\n"
+      printf "\n   💠 ${YELLOW}Downloading font${NC}\n\n"
       wget https://raw.githubusercontent.com/rooted-cyber/good/master/zsh/font.ttf
       printf "\n   💠 ${GREEN}Successfully downloaded font.ttf${NC}\n"
     else
@@ -67,6 +67,7 @@ tr() {
     #R
     # Check if add.sh already exists
     if [ ! -e add.sh ]; then
+      printf "\n   💠 ${YELLOW}Downloading add.sh${NC}\n\n"
       wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/add.sh
       printf "\n   💠 ${GREEN}Successfully downloaded add.sh${NC}\n"
     else
@@ -82,7 +83,7 @@ ohmyzsh () {
     printf "\n   💠 ${RED}Already installed oh-my-zsh${NC}\n"
   else
     #R
-    printf "\n   💠 ${YELLOW}Cloning oh-my-zsh${NC}\n"
+    printf "\n   💠 ${YELLOW}Cloning oh-my-zsh${NC}\n\n"
     cd ~
     git clone https://github.com/ohmyzsh/ohmyzsh
     mv ohmyzsh .oh-my-zsh
@@ -97,7 +98,7 @@ p10k () {
   printf "\n   💠 ${RED}Already installed powerlevel10k${NC}\n"
 else
   #R
-  printf "\n   💠 ${YELLOW}Cloning powerlevel10k${NC}\n"
+  printf "\n   💠 ${YELLOW}Cloning powerlevel10k${NC}\n\n"
   cd ~
   git clone https://github.com/romkatv/powerlevel10k
   printf "\n   💠 ${GREEN}Cloning successful powerlevel10k ${NC}\n"
@@ -112,7 +113,7 @@ menu2() {
   ohmyzsh
   p10k
   chsh -s zsh
-  printf "\n\n   💠 ${GREEN}Restart Termux${NC}\n"
+  printf "\n\n   💠 ${GREEN}Restart Termux${NC}\n\n"
 }
 
 menu2
