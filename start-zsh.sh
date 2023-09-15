@@ -32,14 +32,14 @@ auto() {
     R
     printf "\n   💠 ${RED}Already exists autosuggestions/syntax-highlighting${NC}\n"
   else
+    printf "\n   💠 ${YELLOW}Please wait for cloning...${NC}\n"
     cd ~/../usr/etc
     mkdir .plugin
     cd .plugin
-    printf "\n   💠 ${YELLOW}Please wait for cloning...${NC}\n"
     git clone https://github.com/zsh-users/zsh-autosuggestions > /dev/null 2>&1
     git clone https://github.com/zsh-users/zsh-syntax-highlighting > /dev/null 2>&1
     R
-   printf "\n   💠 ${GREEN}Cloning successful${NC}\n"
+    printf "\n   💠 ${GREEN}Cloning successful${NC}\n"
   fi
 }
 
