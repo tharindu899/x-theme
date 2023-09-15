@@ -29,109 +29,95 @@ fl () {
 
 ba() {
   R
-  printf "${GREEN}ZSH-THEME${NC}\n"
+  printf "\n${GREEN}ZSH-THEME${NC}\n"
   echo
 }
 
 auto() {
-  R
-  fl
   cd ~/../usr/etc
-  mkdir .plugin
-  cd .plugin
-  printf "\n\n   💠 ${MAGENTA}Please wait for cloning...${NC}\n"
-  git clone https://github.com/zsh-users/zsh-autosuggestions > /dev/null 2>&1
-  git clone https://github.com/zsh-users/zsh-syntax-highlighting > /dev/null 2>&1
-  R
-  printf "\n\n   💠 ${CYAN}Cloning successful${NC}\n\n"
-}
-
-tr() {
-  cd ~
-  if [ -e .termux ]; then
+  if [ -e .plugin ]; then 
     R
-    cd ~/.termux
-    printf "\n\n   💠 ${MAGENTA}Downloading font🖊️${NC} \n\n"
-    wget https://raw.githubusercontent.com/rooted-cyber/good/master/zsh/font.ttf
-    printf "\n\n   💠 ${ORANGE}Downloading create alias file add.sh${NC} \n\n"
-    wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/add.sh
-    R
-    printf "\n\n   💠 ${GREEN}Successfully downloaded${NC}\n"
+    printf "\n   💠 ${RED}Already exists autosuggestions/syntax-highlighting${NC}\n"
   else
+    cd ~/../usr/etc
+    mkdir .plugin
+    cd .plugin
+    printf "\n   💠 ${MAGENTA}Please wait for cloning...${NC}\n"
+    git clone https://github.com/zsh-users/zsh-autosuggestions > /dev/null 2>&1
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting > /dev/null 2>&1
     R
-    cd ~
-    mkdir ~/.termux
-    cd ~/.termux
-    pwd
-    printf "\n\n   💠 ${MAGENTA}Downloading font🖊${NC}️ \n\n"
-    wget https://raw.githubusercontent.com/rooted-cyber/good/master/zsh/font.ttf
-    printf "\n\n   💠 ${ORANGE}Downloading create alias file add.sh${NC} \n\n"
-    wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/add.sh
-    R
-    printf "\n\n   💠 ${GREEN}Successfully downloaded${NC}\n"
+   printf "\n   💠 ${CYAN}Cloning successful${NC}\n"
   fi
 }
 
-setuping-theme() {
+theme() {
   R
-  printf "\n\n   💠 ${ORANGE}Setting up theme, please wait...${NC}\n\n"
+  printf "\n   💠 ${YELLOW}Downloading .zshrc .p10k${NC}\n\n"
   cd ~
+  rm -rf .zshrc
+  rm -rf .p10k.zsh
   wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/.zshrc > /dev/null 2>&1
   wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/.p10k.zsh > /dev/null 2>&1
   tr
 }
 
-chp() {
-  cd ~
-  if [ -e powerlevel10k ]; then
+tr() {
+  cd ~/.termux
+    # Check if font.ttf already exists
+    if [ ! -e font.ttf ]; then
+      printf "\n   💠 ${MAGENTA}Downloading font${NC}\n"
+      wget https://raw.githubusercontent.com/rooted-cyber/good/master/zsh/font.ttf
+      printf "\n   💠 ${GREEN}Successfully downloaded font.ttf${NC}\n"
+    else
+      printf "\n   💠 ${RED}already exists font.ttf${NC}\n"
+    fi
     R
-    printf "${GREEN}Successfully cloning powerlevel10k${NC}\n\n"
-  else
-    printf "\n\n   💠 ${RED}Sorry, powerlevel10k is not installed!${NC}\n\n"
-    exit
-  fi
-}
-
-cho() {
-  cd ~
-  if [ -e .oh-my-zsh ]; then
-    R
-    printf "\n\n   💠 ${GREEN}Cloning successful${NC}\n\n"
-  else
-    printf "\n\n   💠 ${RED}Cloning failed, please try again!${NC}\n\n"
-    exit
-  fi
+    # Check if add.sh already exists
+    if [ ! -e add.sh ]; then
+      wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/add.sh
+      printf "\n   💠 ${GREEN}Successfully downloaded add.sh${NC}\n"
+    else
+      printf "\n   💠 ${RED}already exists add.sh${NC}\n"
+    fi
+  
 }
 
 ohmyzsh () {
   cd ~
   if [ -e .oh-my-zsh ]; then
     R
-    printf "\n\n   💠 ${GREEN}Already installed oh-my-zsh${NC}\n\n"
+    printf "\n   💠 ${RED}Already installed oh-my-zsh${NC}\n"
   else
     R
-    printf "\n\n   💠 ${PINK}Cloning oh-my-zsh${NC}\n"
+    printf "\n   💠 ${PINK}Cloning oh-my-zsh${NC}\n"
     cd ~
     git clone https://github.com/ohmyzsh/ohmyzsh
     mv ohmyzsh .oh-my-zsh
+    printf "\n   💠 ${GREEN}Cloning successful oh-my-zsh ${NC}\n"
+  fi
+}
+
+p10k () {
+  cd ~
+  if [ -e powerlevel10k ]; then
+  R 
+  printf "\n   💠 ${RED}Already installed powerlevel10k${NC}\n"
+else
+  R
+  printf "\n   💠 ${PINK}Installing...${NC}\n"
+  git clone https://github.com/romkatv/powerlevel10k
+  printf "\n   💠 ${GREEN}Cloning successful powerlevel10k ${NC}\n"
   fi
 }
 
 menu2() {
-  R
-  printf "\n\n   💠 ${PINK}Installing...${NC}\n\n"
-  R
-  printf "${PINK}Cloning powerlevel10k approx. 80MB${NC}\n"
   sleep 1
-  cd ~
-  git clone https://github.com/romkatv/powerlevel10k
-  chp
-  ohmyzsh
-  cho
-  auto
-  setuping-theme
-  chsh -s zsh
   R
+  auto
+  theme
+  ohmyzsh
+  p10k
+  chsh -s zsh
   printf "\n\n   💠 ${GREEN}Restart Termux${NC}\n"
 }
 

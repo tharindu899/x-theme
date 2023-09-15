@@ -19,21 +19,34 @@ bash zsh.sh
  ```bash
  zsh2
  ```
- 
- ## Video tutorial 👇
+
+## Video tutorial 👇
 
 link :- [Video link](https://youtu.be/2krTPrMHG80)
 
- 
- ## example 👇
- 
-<div style="display: flex; justify-content: space-between;">
-  <img src="https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/img/zsh.jpg" width="155">
-  <img src="https://github.com/rooted-cyber/image-upload/raw/master/zsh2.png" width="190">
-</div>
+## example 👇
 
-__________________________________________
+<head
+>
+  <style
+  >
+    .image-container {
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body
+>
+  <div class="image-container"
+  >
+    <img src="https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/img/zsh.jpg" width="155" alt="Image 1"
+    >
+    <img src="https://github.com/rooted-cyber/image-upload/raw/master/zsh2.png" width="190" alt="Image 2"
+    >
+  </div>
+</body>
 
+[rooted-cyber](https://github.com/rooted-cyber)
 
-- [rooted-cyber](https://github.com/rooted-cyber)
-# Thanks 🙏
+## Thanks 🙏

@@ -44,7 +44,8 @@ menu3 () {
     R
     cd ~/.termux
     pwd
-    rm -f termux.properties > /dev/null 2>&1
+    rm -rf termux.properties
+    #rm -f termux.properties > /dev/null 2>&1
     printf "\n\n    💠 ${YELLOW}Downloading button file${RESET}\n\n"
     wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/termux.properties
     ex
@@ -54,7 +55,7 @@ menu3 () {
     R
     mkdir ~/.termux
     cd ~/.termux
-    rm -f ~/.termux/termux.properties > /dev/null 2>&1
+    #rm -f ~/.termux/termux.properties > /dev/null 2>&1
     printf "\n\n    💠 ${YELLOW}Downloading button file${RESET}\n\n"
     wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/termux.properties
     ex
