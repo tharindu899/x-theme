@@ -59,6 +59,7 @@ banner() {
   
   if [ ! -e zshrc ]; then
     printf "\n   💠 ${YELLOW}Downloading banner zshrc${NC}\n\n"
+    cd $PREFIX/etc
     wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/zshrc
     printf "   💠 ${GREEN}Successfully added zshrc${NC}\n\n"
   else
