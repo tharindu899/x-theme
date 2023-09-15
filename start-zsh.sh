@@ -43,6 +43,19 @@ auto() {
   fi
 }
 
+banner() {
+  cd $PREFIX/etc
+  if [ ! -e banner.txt ]; then
+    printf "\n   💠 ${YELLOW}Downloading banner${NC}\n\n"
+    cd $PREFIX/etc
+    mv motd motd1
+    wget https://github.com/tharindu899/addon/blob/main/termux/zsh/banner.txt
+    printf "\n   💠 ${GREEN}Successfully added banner${NC}\n"
+  else
+    printf "\n   💠 ${RED}already exists banner${NC}\n"
+  fi
+}
+
 theme() {
   #R
   printf "\n   💠 ${YELLOW}Downloading .zshrc .p10k${NC}\n\n"
@@ -110,6 +123,7 @@ menu2() {
   R
   auto
   theme
+  banner
   ohmyzsh
   p10k
   chsh -s zsh
