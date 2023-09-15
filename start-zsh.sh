@@ -51,7 +51,7 @@ banner() {
     cd $PREFIX/etc
     mv motd motd1
     cd ~/.termux
-    wget https://github.com/tharindu899/addon/blob/main/termux/zsh/banner.txt
+    wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/banner.txt
     printf "\n   💠 ${GREEN}Successfully added banner${NC}\n"
   else
     printf "\n   💠 ${RED}already exists banner${NC}\n"
