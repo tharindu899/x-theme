@@ -68,10 +68,10 @@ setup () {
         pkg install logo-ls -y
         ;;
       12)
-        pkg install ruby
+        pkg install ruby -y
         ;;
       13)
-        gem install lolcat
+        gem install lolcat -y
         ;;
       14)
         curl -sL https://raw.githubusercontent.com/bajrangCoder/acode-plugin-acodex/main/installServer.sh | bash
