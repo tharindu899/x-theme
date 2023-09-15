@@ -10,6 +10,7 @@ cd $HOME
 git clone https://github.com/tharindu899/zsh-theme
 cd zsh-theme
 bash zsh.sh
+clear 
 ```
 
 ## starting
