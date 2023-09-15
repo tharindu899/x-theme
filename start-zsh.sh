@@ -42,11 +42,11 @@ auto() {
     cd ~/../usr/etc
     mkdir .plugin
     cd .plugin
-    printf "\n   💠 ${MAGENTA}Please wait for cloning...${NC}\n"
+    printf "\n   💠 ${YELLOW}Please wait for cloning...${NC}\n"
     git clone https://github.com/zsh-users/zsh-autosuggestions > /dev/null 2>&1
     git clone https://github.com/zsh-users/zsh-syntax-highlighting > /dev/null 2>&1
     R
-   printf "\n   💠 ${CYAN}Cloning successful${NC}\n"
+   printf "\n   💠 ${GREEN}Cloning successful${NC}\n"
   fi
 }
 
@@ -65,7 +65,7 @@ tr() {
   cd ~/.termux
     # Check if font.ttf already exists
     if [ ! -e font.ttf ]; then
-      printf "\n   💠 ${MAGENTA}Downloading font${NC}\n"
+      printf "\n   💠 ${YELLOW}Downloading font${NC}\n"
       wget https://raw.githubusercontent.com/rooted-cyber/good/master/zsh/font.ttf
       printf "\n   💠 ${GREEN}Successfully downloaded font.ttf${NC}\n"
     else
@@ -89,7 +89,7 @@ ohmyzsh () {
     printf "\n   💠 ${RED}Already installed oh-my-zsh${NC}\n"
   else
     R
-    printf "\n   💠 ${PINK}Cloning oh-my-zsh${NC}\n"
+    printf "\n   💠 ${YELLOW}Cloning oh-my-zsh${NC}\n"
     cd ~
     git clone https://github.com/ohmyzsh/ohmyzsh
     mv ohmyzsh .oh-my-zsh
@@ -104,7 +104,7 @@ p10k () {
   printf "\n   💠 ${RED}Already installed powerlevel10k${NC}\n"
 else
   R
-  printf "\n   💠 ${PINK}Installing...${NC}\n"
+  printf "\n   💠 ${YELLOW}Cloning powerlevel10k${NC}\n"
   git clone https://github.com/romkatv/powerlevel10k
   printf "\n   💠 ${GREEN}Cloning successful powerlevel10k ${NC}\n"
   fi
