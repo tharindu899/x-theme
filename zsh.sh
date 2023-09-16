@@ -37,7 +37,6 @@ zsh-setup() {
 }
 
 bannar() {
-    # Add your custom logic for option 4 here
     fl
     bash bannar.sh
 }
