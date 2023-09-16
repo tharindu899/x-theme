@@ -55,12 +55,20 @@ button() {
 
 zsh-setup() {
     fl
+    echo
+    echo
     bash setup.sh
+    echo
+    echo
 }
 
 bannar() {
     fl
+    echo
+    echo
     bash bannar.sh
+    echo
+    echo
 }
 
 menu() {
