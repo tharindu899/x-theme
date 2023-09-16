@@ -19,14 +19,6 @@ R () {
     python ~/zsh-theme/.random.py
   fi
 }
-ba() {
-    R
-    #figlet ZSH-THEME
-    echo -e "█▀▄ █ █ ▀█▀ ▀█▀ █▀█ █▀█"
-    echo -e "█▀▄ █ █  █   █  █ █ █ █"
-    echo -e "▀▀  ▀▀▀  ▀   ▀  ▀▀▀ ▀ ▀"
-    echo
-}
 
 fl () {
   cd ~/zsh-theme
@@ -40,7 +32,6 @@ ex() {
 }
 
 menu3 () {
-  ba
   cd ~
   if [ -e .termux ]; then
     R
