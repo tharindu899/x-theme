@@ -1,5 +1,7 @@
 # 🚨🚨 fllow steps 🚨🚨
 
+## new added 👇👇
+
 - add coustom banner option
 - create your own bannar with options no-4
 - or use `bash banner.sh`
@@ -18,6 +20,8 @@ cd zsh-theme
 bash zsh.sh
 clear 
 ```
+
+_______________________________________
 
 ```bash
 git clone https://github.com/tharindu899/zsh-theme
@@ -50,10 +54,6 @@ link :- [Video link](https://youtu.be/2krTPrMHG80)
   </div>
 </body>
 
-____________________________________
-
 ### owner whith base code :- [rooted-cyber](https://github.com/rooted-cyber)
-
-____________________________________
 
 ## Thanks 🙏
