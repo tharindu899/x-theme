@@ -137,7 +137,7 @@ menu2() {
   ohmyzsh
   p10k
   chsh -s zsh
-  printf "\n\n   💠 ${GREEN}Restart Termux${NC}"
+  printf "\n\n   💠 ${GREEN}Restart Termux${NC}\n"
   printf "   💠 ${YELLOW}Create bannar & button${NC}:- ${GREEN}zsh2${NC}\n\n"
 }
 
