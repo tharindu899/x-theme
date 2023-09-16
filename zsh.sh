@@ -24,8 +24,8 @@ ba() {
 }
 
 zsh-theme() {
-    fl
     R
+    fl
     echo
     echo -e "▀█▀ █ █ █▀▀ █▄█ █▀▀"  
     echo -e " █  █▀█ █▀▀ █ █ █▀▀" 
@@ -41,7 +41,6 @@ zsh-theme() {
 
 button() {
     fl
-    R
     echo
     echo -e "█▀▄ █ █ ▀█▀ ▀█▀ █▀█ █▀█"
     echo -e "█▀▄ █ █  █   █  █ █ █ █"
@@ -57,7 +56,6 @@ button() {
 
 zsh-setup() {
     fl
-    R
     echo
     echo -e " █▀█ █ █ █▀▀ █▀▀"
     echo -e " █▀▀ █▀▄ █ █ ▀▀█"
@@ -73,7 +71,6 @@ zsh-setup() {
 
 bannar() {
     fl
-    R
     echo
     echo -e " █▀▄ █▀█ █▀█ █▀█ █▀▀ █▀▄"
     echo -e " █▀▄ █▀█ █ █ █ █ █▀▀ █▀▄"
