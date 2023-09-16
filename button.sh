@@ -26,7 +26,7 @@ fl () {
 
 ba() {
   R
-  printf "${GREEN}ZSH-THEME${RESET}\n"
+  printf "ZSH-THEME\n"
   echo
 }
 
