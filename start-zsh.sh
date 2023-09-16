@@ -133,6 +133,7 @@ else
 menu2() {
   sleep 1
   R
+  ba
   auto
   theme
   banner
