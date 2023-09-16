@@ -25,7 +25,13 @@ ba() {
 
 zsh-theme() {
     fl
+    echo
+    echo -e "▀█▀ █ █ █▀▀ █▄█ █▀▀"  
+    echo -e " █  █▀█ █▀▀ █ █ █▀▀" 
+    echo -e " ▀  ▀ ▀ ▀▀▀ ▀ ▀ ▀▀▀"
+    echo
     bash start-zsh.sh
+    echo
     echo -e "▀█▀ █ █ █▀▀ █▄█ █▀▀   ▀█▀ █▀█ █▀▀ ▀█▀ █▀█ █   █"  
     echo -e " █  █▀█ █▀▀ █ █ █▀▀    █  █ █ ▀▀█  █  █▀█ █   █" 
     echo -e " ▀  ▀ ▀ ▀▀▀ ▀ ▀ ▀▀▀   ▀▀▀ ▀ ▀ ▀▀▀  ▀  ▀ ▀ ▀▀▀ ▀▀▀"
@@ -34,10 +40,17 @@ zsh-theme() {
 
 button() {
     fl
-    bash button.sh
+    echo
     echo -e "█▀▄ █ █ ▀█▀ ▀█▀ █▀█ █▀█"
     echo -e "█▀▄ █ █  █   █  █ █ █ █"
     echo -e "▀▀  ▀▀▀  ▀   ▀  ▀▀▀ ▀ ▀"
+    echo
+    bash button.sh
+    echo
+    echo -e "█▀▄ █ █ ▀█▀ ▀█▀ █▀█ █▀█   ▀█▀ █▀█ █▀▀ ▀█▀ █▀█ █   █"  
+    echo -e "█▀▄ █ █  █   █  █ █ █ █    █  █ █ ▀▀█  █  █▀█ █   █"
+    echo -e "▀▀  ▀▀▀  ▀   ▀  ▀▀▀ ▀ ▀   ▀▀▀ ▀ ▀ ▀▀▀  ▀  ▀ ▀ ▀▀▀ ▀▀▀"
+    echo
 }
 
 zsh-setup() {
