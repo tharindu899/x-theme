@@ -1,5 +1,10 @@
 # 🚨🚨 fllow steps 🚨🚨
 
+- add coustom banner option
+- create your own bannar with options no-4
+- or use `bash banner.sh`
+- alrady add with colours
+
 ## instalation command 👇
 
 ```code
