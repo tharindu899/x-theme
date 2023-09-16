@@ -84,7 +84,7 @@ menu() {
     #printf "\033[1;92m[\033[0m2\033[1;92m]\033[1;93m Some changes in zsh theme\n"
     printf "\033[1;92m[\033[0m2\033[1;92m]\033[1;93m Termux Extra button\n"
     printf "\033[1;92m[\033[0m3\033[1;92m]\033[1;93m Create banner save com:(ctrl+x y)\n"
-    printf "\033[1;92m[\033[0m4\033[1;92m]\033[1;93m Exit\n\n\n"
+    printf "\033[1;92m[\033[0m5\033[1;92m]\033[1;93m Exit\n\n\n"
     printf "\033[0;32m  Termux bannar save to use this command (ctrl+v y)\033[0m \n\033[0;31m  do you want defult bannar then exit (don't use {no-03} button) \033[0m\n\n"
     printf "\033[1;96m%s Entar number >> "
     read a
@@ -94,7 +94,7 @@ menu() {
         2) button ;;
         3) bannar ;;
         4) zsh-setup ;;
-        4) exit ;;
+        5) exit ;;
         *) menu ;;
     esac
 }
