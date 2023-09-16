@@ -24,7 +24,6 @@ ba() {
 }
 
 zsh-theme() {
-    ba
     fl
     bash start-zsh.sh
 }
