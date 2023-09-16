@@ -23,7 +23,7 @@ ba() {
 zsh-theme() {
     ba
     fl
-    bash zsh-theme.sh
+    bash start-zsh.sh
 }
 
 button() {
