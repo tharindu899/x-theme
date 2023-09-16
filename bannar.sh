@@ -27,6 +27,7 @@ ba() {
 
 create_banner() {
     cd $PREFIX/etc
+    nano banner.txt
     printf "\n   💠 ${GREEN}Successfully created banner${NC}\n"
 }
 
