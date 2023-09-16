@@ -93,6 +93,7 @@ menu() {
         #2) changes ;;
         2) button ;;
         3) bannar ;;
+        4) zsh-setup ;;
         4) exit ;;
         *) menu ;;
     esac
