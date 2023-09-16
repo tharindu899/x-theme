@@ -43,6 +43,6 @@ link :- [Video link](https://youtu.be/2krTPrMHG80)
   </div>
 </body>
 
-[rooted-cyber](https://github.com/rooted-cyber)
+owner whith base code :- [rooted-cyber](https://github.com/rooted-cyber)
 
 ## Thanks 🙏
