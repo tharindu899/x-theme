@@ -4,6 +4,7 @@
 - create your own bannar with options no-4
 - or use `bash banner.sh`
 - alrady add with colours
+- use this genarate to bannar :👉 [link 🖇️🖇️](https://textkool.com)
 
 ## instalation command 👇
 
@@ -47,6 +48,8 @@ link :- [Video link](https://youtu.be/2krTPrMHG80)
   </div>
 </body>
 
-owner whith base code :- [rooted-cyber](https://github.com/rooted-cyber)
+____________________________________
+
+#### owner whith base code :- [rooted-cyber](https://github.com/rooted-cyber)
 
 ## Thanks 🙏
