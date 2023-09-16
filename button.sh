@@ -43,7 +43,6 @@ menu3 () {
   if [ -e .termux ]; then
     R
     cd ~/.termux
-    pwd
     rm -rf termux.properties
     #rm -f termux.properties > /dev/null 2>&1
     printf "\n\n    💠 ${YELLOW}Downloading button file${RESET}\n\n"
