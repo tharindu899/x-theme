@@ -16,7 +16,10 @@ fl () {
 
 ba() {
     R
-    figlet ZSH-THEME
+    #figlet ZSH-THEME
+    echo -e "▀▀█ █▀▀ █ █   ▀█▀ █ █ █▀▀ █▄█ █▀▀"
+    echo -e "▄▀  ▀▀█ █▀█    █  █▀█ █▀▀ █ █ █▀▀"
+    echo -e "▀▀▀ ▀▀▀ ▀ ▀    ▀  ▀ ▀ ▀▀▀ ▀ ▀ ▀▀▀"
     echo
 }
 
