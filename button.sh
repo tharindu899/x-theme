@@ -24,12 +24,6 @@ fl () {
   cd ~/zsh-theme
 }
 
-ba() {
-  R
-  printf "ZSH-THEME\n"
-  echo
-}
-
 ex() {
   cd $PREFIX/bin
   echo "#!/data/data/com.termux/files/usr/bin/sh" >> e
@@ -38,7 +32,6 @@ ex() {
 }
 
 menu3 () {
-  ba
   cd ~
   if [ -e .termux ]; then
     R
