@@ -20,14 +20,6 @@ fl () {
   cd ~/zsh-theme
 }
 
-ba() {
-  R
-  echo -e "▀█▀ █ █ █▀▀ █▄█ █▀▀   ▀█▀ █▀█ █▀▀ ▀█▀ █▀█ █   █"  
-  echo -e " █  █▀█ █▀▀ █ █ █▀▀    █  █ █ ▀▀█  █  █▀█ █   █" 
-  echo -e " ▀  ▀ ▀ ▀▀▀ ▀ ▀ ▀▀▀   ▀▀▀ ▀ ▀ ▀▀▀  ▀  ▀ ▀ ▀▀▀ ▀▀▀"
-  echo
-}
-
 auto() {
   cd ~/../usr/etc
   if [ -e .plugin ]; then 
@@ -133,7 +125,6 @@ else
 menu2() {
   sleep 1
   R
-  ba
   auto
   theme
   banner
