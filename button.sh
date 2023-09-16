@@ -61,6 +61,7 @@ menu3 () {
     ex
     R
     printf "\n\n   💠 ${GREEN}Restart Termux and check${RESET}\n"
+    printf "   💠 ${YELLOW}Create bannar & button${NC}:- ${GREEN}zsh2${NC}\n\n"
   fi
 }
 
