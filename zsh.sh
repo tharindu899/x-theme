@@ -40,6 +40,7 @@ zsh-theme() {
 }
 
 button() {
+    R
     fl
     echo
     echo -e "█▀▄ █ █ ▀█▀ ▀█▀ █▀█ █▀█"
