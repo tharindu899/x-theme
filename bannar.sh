@@ -19,17 +19,10 @@ fl () {
   cd ~/zsh-theme
 }
 
-ba() {
-  R
-  printf "\n${GREEN}ZSH-THEME${NC}\n"
-  echo
-}
-
 create_banner() {
     cd $PREFIX/etc
     nano banner.txt
     printf "\n   💠 ${GREEN}Successfully created banner${NC}\n\n"
 }
 
-ba
 create_banner
