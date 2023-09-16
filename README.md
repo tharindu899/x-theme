@@ -18,6 +18,10 @@ bash zsh.sh
 clear 
 ```
 
+```bash
+git clone https://github.com/tharindu899/zsh-theme
+```
+
 ## starting
 
 - Type : 👇
