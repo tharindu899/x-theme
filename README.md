@@ -32,17 +32,6 @@ link :- [Video link](https://youtu.be/2krTPrMHG80)
 
 ## example 👇
 
-<head
->
-  <style
-  >
-    .image-container {
-      display: flex;
-      justify-content: space-between;
-    }
-  </style>
-</head>
-<body
 >
   <div class="image-container"
   >
