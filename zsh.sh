@@ -55,11 +55,6 @@ button() {
 
 zsh-setup() {
     fl
-    echo
-    echo -e " █▀█ █ █ █▀▀ █▀▀"
-    echo -e " █▀▀ █▀▄ █ █ ▀▀█"
-    echo -e " ▀   ▀ ▀ ▀▀▀ ▀▀▀"
-    echo
     bash setup.sh
     echo
     echo -e "\033[0;32m █▀█ █ █ █▀▀ █▀▀   █ █ █▀█ █▀▄ █▀█ ▀█▀ █▀▀ █▀▄ \033[0m"
