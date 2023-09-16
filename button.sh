@@ -39,9 +39,6 @@ menu3 () {
     rm -rf termux.properties
     #rm -f termux.properties > /dev/null 2>&1
     printf "\n\n    💠 ${YELLOW}Downloading button file${RESET}\n\n"
-    echo -e "█▀▄ █ █ ▀█▀ ▀█▀ █▀█ █▀█"
-    echo -e "█▀▄ █ █  █   █  █ █ █ █"
-    echo -e "▀▀  ▀▀▀  ▀   ▀  ▀▀▀ ▀ ▀"
     wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/termux.properties
     ex
     R
