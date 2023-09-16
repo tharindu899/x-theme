@@ -26,11 +26,18 @@ ba() {
 zsh-theme() {
     fl
     bash start-zsh.sh
+    echo -e "▀█▀ █ █ █▀▀ █▄█ █▀▀   ▀█▀ █▀█ █▀▀ ▀█▀ █▀█ █   █"  
+    echo -e " █  █▀█ █▀▀ █ █ █▀▀    █  █ █ ▀▀█  █  █▀█ █   █" 
+    echo -e " ▀  ▀ ▀ ▀▀▀ ▀ ▀ ▀▀▀   ▀▀▀ ▀ ▀ ▀▀▀  ▀  ▀ ▀ ▀▀▀ ▀▀▀"
+    echo
 }
 
 button() {
     fl
     bash button.sh
+    echo -e "█▀▄ █ █ ▀█▀ ▀█▀ █▀█ █▀█"
+    echo -e "█▀▄ █ █  █   █  █ █ █ █"
+    echo -e "▀▀  ▀▀▀  ▀   ▀  ▀▀▀ ▀ ▀"
 }
 
 zsh-setup() {
