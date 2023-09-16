@@ -32,6 +32,7 @@ link :- [Video link](https://youtu.be/2krTPrMHG80)
 
 ## example 👇
 
+<body
 >
   <div class="image-container"
   >
