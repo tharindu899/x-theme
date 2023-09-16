@@ -60,8 +60,8 @@ menu3 () {
     wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/termux.properties
     ex
     R
-    printf "\n\n   💠 ${GREEN}Restart Termux and check${RESET}\n\n"
-    printf "   💠 ${YELLOW}Create bannar & button${NC}:- ${GREEN}zsh2${NC}\n\n"
+    printf "\n\n   💠 ${GREEN}Restart Termux and check${RESET}"
+    printf "\n   💠 ${YELLOW}Create bannar & button${NC}:- ${GREEN}zsh2${NC}\n\n"
   fi
 }
 
