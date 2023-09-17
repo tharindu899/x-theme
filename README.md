@@ -15,8 +15,8 @@ apt update -y
 apt upgrade -y
 apt install git -y
 cd $HOME
-git clone https://github.com/tharindu899/zsh-theme
-cd zsh-theme
+git clone https://github.com/tharindu899/x-theme
+cd x-theme
 bash zsh.sh
 clear
 ```
