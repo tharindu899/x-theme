@@ -2,7 +2,7 @@
 
 # Define ANSI color codes and relevant names
 COLORS=("32" "33" "33" "32" "35" "34" "36" "1;31" "1;34" "1;35" "1;36" "1;32" "1;33" "1;31" "1;35" "1;36" "1;32" "1;33" "1;31" "1;35" "1;36" "1;32" "1;33")
-ASCII_ART_URL="https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/ascii_art.txt"  # URL to your ASCII art file
+ASCII_ART_URL="https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/txt/pkg.txt"  # URL to your ASCII art file
 NAMES=()  # Initialize an empty array for step names
 
 # Fetch the ASCII art file from the URL and add it to the NAMES array
