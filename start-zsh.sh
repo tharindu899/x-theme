@@ -46,7 +46,7 @@ NUM_STEPS=${#NAMES[@]}
 # }
 
 highlighting () {
-  cd $PREFIX/etc/.plugin
+  cd $PREFIX/etc
   mkdir .plugin
   if [ -e .plugin ]; then
     printf "\n   💠 ${RED}Already exists syntax-highlighting${NC}\n"
