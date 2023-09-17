@@ -28,6 +28,7 @@ setup () {
   for ((i = 0; i < NUM_STEPS; i++)); do
     color_code="\033[${COLORS[$i]}m"
     name=${NAMES[$i]}
+    clear
     printf "\n\n   $color_code$name \033[0m\n\n"
        
     case $i in
