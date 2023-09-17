@@ -80,6 +80,7 @@ setup () {
     esac
     sleep 1
     clear
+    zsh2
   done
   
   cd $PREFIX/bin
