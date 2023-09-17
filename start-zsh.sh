@@ -135,11 +135,11 @@ powerl () {
 etc () { 
   cd $PREFIX/etc
   printf "\n   💠 ${YELLOW}Downloading banner zshrc${NC}\n\n"
-  cd $PREFIX/etc
   mv motd motd1
   rm -rf zshrc
   wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/zshrc
   printf "   💠 ${GREEN}Successfully added zshrc${NC}\n\n"
+  tr
 }
 
 zshrc () {
@@ -147,6 +147,7 @@ zshrc () {
   printf "\n   💠 ${YELLOW}Downloading .zshrc${NC}\n\n"
   rm -rf .zshrc
   wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/.zshrc #> /dev/null 2>&1
+  printf "\n   💠 ${GREEN}Download Complete .zshrc${NC}\n\n"
   tr
 }
 
@@ -155,6 +156,7 @@ p10k.sh () {
   printf "\n   💠 ${YELLOW}Downloading .p10k.zsh${NC}\n\n"
   rm -rf .p10k.zsh
   wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/.p10k.zsh #> /dev/null 2>&1
+  printf "\n   💠 ${YELLOW}Download Complete .p10k.zsh${NC}\n\n"
   tr
 }
 
