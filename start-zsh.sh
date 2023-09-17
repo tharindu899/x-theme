@@ -147,7 +147,7 @@ etc () {
 }
 
 zshrc () {
-  cd $PREFIX/etc
+  cd ~
   printf "\n   💠 ${YELLOW}Downloading .zshrc${NC}\n\n"
   rm -rf .zshrc
   wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/.zshrc #> /dev/null 2>&1
