@@ -24,7 +24,7 @@ clear
 _______________________________________
 
 ```bash
-git clone https://github.com/tharindu899/zsh-theme
+git clone https://github.com/tharindu899/x-theme
 ```
 
 ## starting
