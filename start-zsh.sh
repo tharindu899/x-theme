@@ -47,12 +47,12 @@ NUM_STEPS=${#NAMES[@]}
 
 highlighting () {
   cd $PREFIX/etc/.plugin
+  mkdir .plugin
   if [ -e zsh-syntax-highlighting ]; then
     printf "\n   💠 ${RED}Already exists syntax-highlighting${NC}\n"
   else
     printf "\n   💠 ${YELLOW}cloning syntax-highlighting${NC}\n\n"
     cd $PREFIX/etc
-    mkdir .plugin
     cd .plugin
     git clone https://github.com/zsh-users/zsh-syntax-highlighting #> /dev/null 2>&1
     printf "\n   💠 ${GREEN}Cloning successful${NC}\n"
@@ -139,7 +139,6 @@ etc () {
   rm -rf zshrc
   wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/zshrc
   printf "   💠 ${GREEN}Successfully added zshrc${NC}\n\n"
-  tr
 }
 
 zshrc () {
@@ -148,7 +147,6 @@ zshrc () {
   rm -rf .zshrc
   wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/.zshrc #> /dev/null 2>&1
   printf "\n   💠 ${GREEN}Download Complete .zshrc${NC}\n\n"
-  tr
 }
 
 p10k.sh () {
@@ -157,7 +155,6 @@ p10k.sh () {
   rm -rf .p10k.zsh
   wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/.p10k.zsh #> /dev/null 2>&1
   printf "\n   💠 ${YELLOW}Download Complete .p10k.zsh${NC}\n\n"
-  tr
 }
 
 button () {
