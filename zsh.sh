@@ -117,7 +117,6 @@ menu() {
         printf "\033[1;96m%s Entar number >> "
         read a
         clear
-        
         case $a in
             1) zsh-theme ;;
             2) button ;;
