@@ -29,7 +29,7 @@ while IFS= read -r line; do
     # Replace % with spaces in each line
     line="${line//\%/ }"
     name=""
-    for ((i = 0; i < 3; i++)); do
+    for ((i = 0; i < 5; i++)); do
       read -r next_line
       next_line="${next_line//\%/ }"
       name="$name$next_line\n"
