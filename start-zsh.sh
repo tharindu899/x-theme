@@ -60,8 +60,8 @@ highlighting () {
 }
 
 suggestions () {
-  cd $PREFIX/etc
-  if [ -e .plugin ]; then
+  cd $PREFIX/etc/.plugin
+  if [ -e zsh-autosuggestions ]; then
     printf "\n   💠 ${RED}Already exists autosuggestions${NC}\n"
   else
     printf "\n   💠 ${YELLOW}cloning autosuggestions${NC}\n\n"
