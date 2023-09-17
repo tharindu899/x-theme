@@ -60,12 +60,12 @@ highlighting () {
 }
 
 suggestions () {
-  cd $PREFIX/etc/.plugin
+  cd $PREFIX/etc
   if [ -e .plugin ]; then
     printf "\n   💠 ${RED}Already exists autosuggestions${NC}\n"
   else
     printf "\n   💠 ${YELLOW}cloning autosuggestions${NC}\n\n"
-    cd $PREFIX/etc/.plugin
+    cd $PREFIX/etc
     # mkdir .plugin
     cd .plugin
     git clone https://github.com/zsh-users/zsh-autosuggestions #> /dev/null 2>&1
