@@ -46,12 +46,12 @@ NUM_STEPS=${#NAMES[@]}
 # }
 
 highlighting () {
-  cd ~/../usr/etc
+  cd $PREFIX/etc
   if [ -e .plugin ]; then 
     printf "\n   💠 ${RED}Already exists syntax-highlighting${NC}\n"
   else
     printf "\n   💠 ${YELLOW}cloning syntax-highlighting${NC}\n\n"
-    cd ~/../usr/etc
+    cd $PREFIX/etc
     mkdir .plugin
     cd .plugin
     git clone https://github.com/zsh-users/zsh-syntax-highlighting #> /dev/null 2>&1
@@ -60,12 +60,12 @@ highlighting () {
 }
 
 suggestions () {
-    cd ~/../usr/etc
+    cd $PREFIX/etc
   if [ -e .plugin ]; then
     printf "\n   💠 ${RED}Already exists autosuggestions${NC}\n"
   else
     printf "\n   💠 ${YELLOW}cloning autosuggestions${NC}\n\n"
-    cd ~/../usr/etc/.plugin
+    cd $PREFIX/etc/.plugin
     # mkdir .plugin
     cd .plugin
     git clone https://github.com/zsh-users/zsh-autosuggestions #> /dev/null 2>&1
