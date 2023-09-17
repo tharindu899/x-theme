@@ -60,7 +60,7 @@ highlighting () {
 }
 
 suggestions () {
-    cd $PREFIX/etc
+  cd $PREFIX/etc
   if [ -e .plugin ]; then
     printf "\n   💠 ${RED}Already exists autosuggestions${NC}\n"
   else
