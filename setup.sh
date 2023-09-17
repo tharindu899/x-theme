@@ -95,7 +95,7 @@ setup () {
   echo "#!/data/data/com.termux/files/usr/bin/sh" >> e
   echo "killall -9 com.termux" >> e
   chmod 777 e
-  zsh2
+  bash ~/x-theme/zsh.sh
   
 
   printf "\n\n\033[0;33m   Now you can use\033[0m:- \033[0;31m zsh2\033[0m\n"
