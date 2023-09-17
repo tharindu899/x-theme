@@ -47,7 +47,7 @@ NUM_STEPS=${#NAMES[@]}
 
 highlighting () {
   cd $PREFIX/etc/.plugin
-  if [ -e zsh-syntax-highlighting ]; then >/dev/null 2>&1
+  if [ -e zsh-syntax-highlighting ]; then
     printf "\n   💠 ${RED}Already exists syntax-highlighting${NC}\n"
   else
     printf "\n   💠 ${YELLOW}cloning syntax-highlighting${NC}\n\n"
