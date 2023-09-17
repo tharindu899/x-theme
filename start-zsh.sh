@@ -65,9 +65,9 @@ suggestions () {
     printf "\n   💠 ${RED}Already exists autosuggestions${NC}\n"
   else
     printf "\n   💠 ${YELLOW}cloning autosuggestions${NC}\n\n"
-    cd $PREFIX/etc
+    cd $PREFIX/etc/.plugin
     # mkdir .plugin
-    cd .plugin
+    #cd .plugin
     git clone https://github.com/zsh-users/zsh-autosuggestions #> /dev/null 2>&1
     printf "\n   💠 ${GREEN}Cloning successful${NC}\n"
   fi
