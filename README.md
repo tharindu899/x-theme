@@ -12,7 +12,7 @@
 
 ```code
 apt update -y
-apt upgrade -y
+apt upgrade 
 apt install git -y
 cd $HOME
 git clone https://github.com/tharindu899/x-theme
