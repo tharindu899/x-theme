@@ -237,6 +237,7 @@ setup () {
     ((color_index = (color_index + 1) % ${#shuffled_colors[@]}))
   done
   
+  chsh -s zsh
   zsh2
 
 }
