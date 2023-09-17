@@ -171,7 +171,7 @@ button () {
     printf "\n    💠 ${GREEN}Downloading complete${RESET}"
   else
     mkdir ~/.termux
-    cd ~/.termux
+    mv termux.properties termux.properties1
     printf "\n\n    💠 ${YELLOW}Downloading button file${RESET}\n\n"
     wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/termux.properties
   fi
