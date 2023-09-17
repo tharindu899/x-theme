@@ -44,7 +44,7 @@ NUM_STEPS=${#NAMES[@]}
 # }
 
 fl () {
-    cd ~/zsh-theme
+    cd ~/x-theme
 }
 
 ba() {
