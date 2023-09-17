@@ -36,7 +36,7 @@ setup () {
         apt update -y
         ;;
       1)
-        apt upgrade -y
+        apt upgrade
         ;;
       2)
         apt install python -y
