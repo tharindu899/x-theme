@@ -238,19 +238,6 @@ setup () {
     ((color_index = (color_index + 1) % ${#shuffled_colors[@]}))
   done
   
-  cd $PREFIX/bin
-  rm -rf zsh2
-  echo "#!/data/data/com.termux/files/usr/bin/sh" >> zsh2
-  echo "bash ~/x-theme/zsh.sh" >> zsh2
-  chmod 777 zsh2
-  rm -rf add
-  echo "#!/data/data/com.termux/files/usr/bin/sh" >> add
-  echo "bash ~/add.sh" >> add
-  chmod 777 add
-  rm -rf e
-  echo "#!/data/data/com.termux/files/usr/bin/sh" >> e
-  echo "killall -9 com.termux" >> e
-  chmod 777 e
   zsh2
 
 }
