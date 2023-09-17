@@ -127,9 +127,9 @@ menu() {
         esac
         sleep 1
         clear
-        zsh2
         ((color_index = (color_index + 1) % ${#shuffled_colors[@]}))
   done
+  zsh2
   
 }
 
