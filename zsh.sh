@@ -129,7 +129,6 @@ menu() {
         clear
         ((color_index = (color_index + 1) % ${#shuffled_colors[@]}))
   done
-  zsh2
   
 }
 
