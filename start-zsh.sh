@@ -78,7 +78,6 @@ banner () {
   if [ ! -e banner.txt ]; then
     printf "\n   💠 ${YELLOW}Downloading banner.txt${NC}\n\n"
     cd $PREFIX/etc
-    mv motd motd1
     wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/banner.txt
     printf "\n   💠 ${GREEN}Successfully added banner${NC}\n"
   else
@@ -138,6 +137,7 @@ etc () {
   if [ ! -e zshrc ]; then
     printf "\n   💠 ${YELLOW}Downloading banner zshrc${NC}\n\n"
     cd $PREFIX/etc
+    mv motd motd1
     rm -rf zshrc
     wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/zshrc
     printf "   💠 ${GREEN}Successfully added zshrc${NC}\n\n"
