@@ -47,12 +47,12 @@ NUM_STEPS=${#NAMES[@]}
 
 highlighting () {
   cd $PREFIX/etc
-  mkdir .plugin
   if [ -e .plugin ]; then
     printf "\n   💠 ${RED}Already exists syntax-highlighting${NC}\n"
   else
     printf "\n   💠 ${YELLOW}cloning syntax-highlighting${NC}\n\n"
     cd $PREFIX/etc
+    mkdir .plugin
     cd .plugin
     git clone https://github.com/zsh-users/zsh-syntax-highlighting #> /dev/null 2>&1
     printf "\n   💠 ${GREEN}Cloning successful${NC}\n"
