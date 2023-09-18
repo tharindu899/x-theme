@@ -48,14 +48,14 @@ NUM_STEPS=${#NAMES[@]}
 fl () {
     cd ~/x-theme
 }
-
-ba() {
-    #figlet ZSH-THEME
-    echo -e "\033[0;32m▀▀█ █▀▀ █ █   ▀█▀ █ █ █▀▀ █▄█ █▀▀\033[0m"
-    echo -e "\033[0;33m▄▀  ▀▀█ █▀█    █  █▀█ █▀▀ █ █ █▀▀\033[0m"
-    echo -e "\033[0;31m▀▀▀ ▀▀▀ ▀ ▀    ▀  ▀ ▀ ▀▀▀ ▀ ▀ ▀▀▀\033[0m"
-    echo
-}
+# 
+# ba() {
+#     #figlet ZSH-THEME
+#     echo -e "\033[0;32m▀▀█ █▀▀ █ █   ▀█▀ █ █ █▀▀ █▄█ █▀▀\033[0m"
+#     echo -e "\033[0;33m▄▀  ▀▀█ █▀█    █  █▀█ █▀▀ █ █ █▀▀\033[0m"
+#     echo -e "\033[0;31m▀▀▀ ▀▀▀ ▀ ▀    ▀  ▀ ▀ ▀▀▀ ▀ ▀ ▀▀▀\033[0m"
+#     echo
+# }
 
 zsh-theme() {
     fl
@@ -107,9 +107,10 @@ menu() {
     for ((i = 0; i < NUM_STEPS; i++)); do
         color_code="\033[${shuffled_colors[$color_index]}m"
         name=${NAMES[$i]}
+        printf "\n\n   $color_code$name \033[0m\n\n"
         clear
-        printf "\n\n"
-        ba
+        #printf "\n\n"
+        #ba
         printf "\033[1;92m[\033[0m1\033[1;92m]\033[1;93m Zsh Theme install\n"
         # printf "\033[1;92m[\033[0m2\033[1;92m]\033[1;93m Termux Extra button\n"
         printf "\033[1;92m[\033[0m2\033[1;92m]\033[1;93m Create banner\n"
