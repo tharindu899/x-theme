@@ -101,6 +101,7 @@ menu() {
     for ((i = 0; i < NUM_STEPS; i++)); do
         color_code="\033[${shuffled_colors[$color_index]}m"
         name=${NAMES[$i]}
+        clear
         printf "\n\n   $color_code$name \033[0m\n\n"
         printf "\033[1;92m[\033[0m1\033[1;92m]\033[1;93m Zsh Theme install\n"
         printf "\033[1;92m[\033[0m2\033[1;92m]\033[1;93m Create banner\n"
