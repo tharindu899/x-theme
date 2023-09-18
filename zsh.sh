@@ -130,6 +130,6 @@ cd $PREFIX/bin
 if [ -e zsh2 ]; then
     menu
 else
-    zsh-setup
+    pkg
     menu
 fi
