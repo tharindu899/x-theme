@@ -186,7 +186,7 @@ setup () {
   for ((i = 0; i < NUM_STEPS; i++)); do
     color_code="\033[${shuffled_colors[$color_index]}m"
     name=${NAMES[$i]}
-    printf "\n\n   $color_code$name \033[0m\n\n"
+    #printf "\n\n   $color_code$name \033[0m\n\n"
        
     case $i in
       0)
