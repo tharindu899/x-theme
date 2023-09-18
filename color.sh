@@ -64,49 +64,38 @@ install_zsh_theme() {
   termux-reload-settings
 }
 
+# Function to display the menu#!/bin/bash
+
+# ... (other code remains the same)
+
 # Function to display the menu
 menu() {
-  local options=("aci" "aco" "azu" "bim" "cai" "chalk" "default" "dracula" "elementary" "elic" "eloi" "flat" "freya" "gruvbox.dark" "hemisu.dark" "hemisu.light" "hybrid" "jup" "mar" "material" "material.ocean" "miu" "monikai.dark" "nep" "ocean.dark" "onr.dark" "one.light" "pali" "peppermint" "sat" "shel" "smyck" "saazzy" "solarized.dark" "solarized.light" "tango" "tin" "tomorrow" "tomorrow.night.blue" "tomorrow.night.bright" "tomorrow.night" "tomorrow.night.eighties" "ura" "vag" "back" "Exit")
-  local color_codes=("aci" "aco" "azu" "bim" "cai" "chalk" "default" "dracula" "elementary" "elic" "eloi" "flat" "freya" "gruvbox.dark" "hemisu.dark" "hemisu.light" "hybrid" "jup" "mar" "material" "material.ocean" "miu" "monikai.dark" "nep" "ocean.dark" "onr.dark" "one.light" "pali" "peppermint" "sat" "shel" "smyck" "saazzy" "solarized.dark" "solarized.light" "tango" "tin" "tomorrow" "tomorrow.night.blue" "tomorrow.night.bright" "tomorrow.night" "tomorrow.night.eighties" "ura" "vag")
-  
+  local options=("aci" "aco" "azu" "bim" "cai" "chalk" "default" "dracula" "elementary" "elic" "eloi" "flat" "freya" "gruvbox.dark" "hemisu.dark" "hemisu.light" "hybrid" "jup" "mar" "material" "material.ocean" "miu" "monikai.dark" "nep" "ocean.dark" "onr.dark" "one.light" "pali" "peppermint" "sat" "shel" "smyck" "saazzy" "solarized.dark" "solarized.light" "tango" "tin" "tomorrow" "tomorrow.night.blue" "tomorrow.night.bright" "tomorrow.night" "tomorrow.night.eighties" "ura" "vag" "Exit")
+
   printf "\n\n   $color_code$name \033[0m\n"
   printf "      ${YELLOW}==========${NC}${GREEN} [Add a colors] ${NC}${YELLOW}=========${NC}\n"
   printf "        ${RED}================================${NC}\n\n"
+
   for ((i = 0; i < ${#options[@]}; i++)); do
-    printf " \033[1;92m[\033[0m$((i+1))\033[1;92m]\033[1;93m ${options[i]}\n"
+    printf " \033[1;92m[$((i+1))]\033[1;93m ${options[i]}\n"
   done
+
   printf "\n"
-  printf "\033[1;96m%s Enter number >> " 
+  printf "\033[1;96mEnter the number of the option you want to select (1-${#options[@]}): "
 
   read choice
 
-  case $choice in
-    [1-44])
-      if [ "$choice" -ge 1 ] && [ "$choice" -le ${#color_codes[@]} ]; then
-        install_zsh_theme "${color_codes[choice-1]}"
-      else
-        printf "\nInvalid choice. Please enter a valid number.\n\n"
-        menu
-      fi
-      ;;
-    45)
-      zsh2
-      # Add functionality for "Pkg update" here
-      # You can replace the comment with your update logic.
-      printf "\n   💠 ${GREEN}Back to the X-Theme${NC}\n\n\n"
-      menu
-      ;;
-    46)
-      exit
-      ;;
-    *)
-      printf "\nInvalid choice. Please enter a valid number.\n\n"
-      menu
-      ;;
-  esac
+  if [ "$choice" -ge 1 ] && [ "$choice" -lt ${#options[@]} ]; then
+    install_zsh_theme "${options[choice-1]}"
+  elif [ "$choice" -eq ${#options[@]} ]; then
+    exit
+  else
+    printf "\nInvalid choice. Please enter a valid number.\n\n"
+    menu
+  fi
 }
 
 # Main script
 menu
 clear
-bash color.sh
+bash ~/x-theme/color.sh
