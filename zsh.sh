@@ -6,7 +6,7 @@ GREEN='\033[0;32m'
 YELLOW='\033[0;33m'
 NC='\033[0m' # No Color
 COLORS=("31" "32" "33" "34" "35" "36" "91" "92" "93" "94" "95" "96" "101" "102" "103" "104" "105" "106" "107")
-ASCII_ART_URL="https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/ascii_art.txt"  # URL to your ASCII art file
+ASCII_ART_URL="https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/txt/zsh.txt"  # URL to your ASCII art file
 NAMES=()  # Initialize an empty array for step names
 
 # Define the order of color groups
@@ -40,10 +40,6 @@ done <<< "$ascii_art_text"
 
 # Automatically calculate the number of steps
 NUM_STEPS=${#NAMES[@]}
-
-# fl () {
-#   cd ~/zsh-theme
-# }
 
 fl () {
     cd ~/x-theme
