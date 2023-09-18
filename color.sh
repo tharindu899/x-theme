@@ -96,7 +96,7 @@ menu() {
       printf "\n   💠 ${GREEN}Back to the X-Theme${NC}\n\n\n"
       menu
       ;;
-    8)
+    46)
       exit
       ;;
     *)
