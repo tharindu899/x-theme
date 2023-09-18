@@ -93,7 +93,7 @@ menu() {
       zsh2
       # Add functionality for "Pkg update" here
       # You can replace the comment with your update logic.
-      printf "\n   💠 ${GREEN}Back to the X-heme${NC}\n\n\n"
+      printf "\n   💠 ${GREEN}Back to the X-Theme${NC}\n\n\n"
       menu
       ;;
     8)
