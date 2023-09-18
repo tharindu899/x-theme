@@ -108,7 +108,7 @@ menu() {
         color_code="\033[${shuffled_colors[$color_index]}m"
         name=${NAMES[$i]}
         printf "\n\n   $color_code$name \033[0m\n\n"
-        clear
+        #clear
         #printf "\n\n"
         #ba
         printf "\033[1;92m[\033[0m1\033[1;92m]\033[1;93m Zsh Theme install\n"
