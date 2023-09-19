@@ -3,6 +3,7 @@
 ## new added 👇👇
 
 - add coustom banner option
+- add 44 theme colours
 - create your own bannar with options no-4
 - or use `bash banner.sh`
 - alrady add with colours
