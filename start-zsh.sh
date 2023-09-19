@@ -78,7 +78,8 @@ banner () {
   if [ ! -e banner.txt ]; then
     printf "\n   💠 ${YELLOW}Downloading banner.txt${NC}\n\n"
     cd $PREFIX/etc
-    wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/banner.txt
+    #wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/banner.txt
+    wget https://raw.githubusercontent.com/tharindu899/addon/main/termux/zsh/rxfetch
     printf "\n   💠 ${GREEN}Successfully added banner${NC}\n"
   else
     printf "\n   💠 ${RED}already exists banner${NC}\n"
