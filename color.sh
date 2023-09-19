@@ -78,8 +78,9 @@ menu() {
   for ((i = 0; i < lines_before; i++)); do
     printf ""
   done
-
-  printf "$color_code$name \033[0m\n"
+  
+  clear
+  printf "\n$color_code$name \033[0m\n"
   printf "      ${YELLOW}==========${NC}${GREEN} [Add a colors] ${NC}${YELLOW}=========${NC}\n"
   printf "        ${RED}================================${NC}\n\n"
 
