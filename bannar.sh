@@ -21,7 +21,8 @@ fl () {
 
 create_banner() {
     cd $PREFIX/etc
-    nano banner.txt
+    #nano banner.txt
+    nano rxfetch
     printf "\n   💠 ${GREEN}Successfully created banner${NC}\n\n"
 }
 
