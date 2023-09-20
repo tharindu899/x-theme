@@ -92,7 +92,7 @@ setup () {
   chmod 777 zsh2
   rm -rf add
   echo "#!/data/data/com.termux/files/usr/bin/sh" >> add
-  echo "bash ~/add.sh" >> add
+  echo "bash ~/.termux/add.sh" >> add
   chmod 777 add
   rm -rf e
   echo "#!/data/data/com.termux/files/usr/bin/sh" >> e
