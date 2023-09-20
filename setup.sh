@@ -77,6 +77,9 @@ setup () {
       14)
         curl -sL https://raw.githubusercontent.com/bajrangCoder/acode-plugin-acodex/main/installServer.sh | bash
         ;;
+      15)
+        pkg install openssh
+        ;;
     esac
     sleep 1
     clear
