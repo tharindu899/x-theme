@@ -1,4 +1,4 @@
-# 🚨🚨 fllow steps 🚨🚨
+# 🚨🚨 follow steps 🚨🚨
 
 ## new added 👇👇
 
