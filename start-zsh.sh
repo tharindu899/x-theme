@@ -90,7 +90,8 @@ font() {
   cd ~/.termux
     if [ ! -e font.ttf ]; then
       printf "\n   💠 ${YELLOW}Downloading font${NC}\n\n"
-      wget https://raw.githubusercontent.com/rooted-cyber/good/master/zsh/font.ttf
+      #wget https://raw.githubusercontent.com/rooted-cyber/good/master/zsh/font.ttf
+      wget https://raw.githubusercontent.com/tharindu899/addon/blob/main/termux/zsh/font.ttf
       printf "\n   💠 ${GREEN}Successfully downloaded font.ttf${NC}\n"
     else
       printf "\n   💠 ${RED}already exists font.ttf${NC}\n"
